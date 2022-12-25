@@ -2,6 +2,7 @@
   "name": "matx-react",
   "version": "3.0.0",
   "private": true,
+  "homepage": "https://reg-doc.github.io",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.19.2",
     "@emotion/react": "^11.5.0",
@@ -42,6 +43,8 @@
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "ghp": "react-scripts build && gh-pages -d build"
   },
   "eslintConfig": {
